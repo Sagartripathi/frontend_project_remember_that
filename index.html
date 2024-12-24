@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024frontend project</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Remember <span>That</span></a>
+        <img
+          src="images/menu.svg"
+          id="mobile-cta"
+          class="mobile-menu"
+          alt="open
+        Navigation"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt=""
+          />
+
+          <ul class="primary-nav">
+            <li class="current"><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+          <ul class="secondary-nav">
+            <li><a href="">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Nitty &amp; Gritty</p>
+          <h1>A Task App That Doesn't Stink</h1>
+
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Try for free</a>
+            <a href="#" class="watch-video-cta">
+              <img src="images/watch.svg" alt="Watch a video" />Watch a video
+            </a>
+          </div>
+        </div>
+        <img
+          src="images/illustration.svg"
+          alt="Illustration"
+          class="hero-img"
+        />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <ul class="features-list">
+          <li>Unlimited Tasks</li>
+          <li>SMS Task Reminders</li>
+          <li>Confetti Explosions upon Task Completions</li>
+          <li>Social Media Announcements</li>
+          <li>Real Time Collaboration</li>
+          <li>Other awesome features</li>
+        </ul>
+        <img src="images/holding-phone.jpg" alt="man holding-phone" />
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/person.jpg" alt="person" />
+            <blockquote>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus sunt, expedita sint iste illum labore ex deserunt,
+              adipisci optio nisi "
+            </blockquote>
+            <cite>- Sagar Tripathi</cite>
+          </li>
+          <li>
+            <img src="images/person.jpg" alt="person" />
+            <blockquote>
+              "" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus sunt, expedita sint iste illum labore ex deserunt,
+              adipisci optio nisi "
+            </blockquote>
+            <cite>- Sagar Tripathi</cite>
+          </li>
+          <li>
+            <img src="images/person.jpg" alt="person" />
+            <blockquote>
+              "" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus sunt, expedita sint iste illum labore ex deserunt,
+              adipisci optio nisi "
+            </blockquote>
+            <cite>- Sagar Tripathi</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email</label>
+            <input type="text" id="name" name="email" />
+
+            <label for="message">Message</label>
+            <textarea
+              type="message"
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+            >
+            </textarea>
+
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Send Message"
+            />
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7063.1623131019505!2d85.33373975223654!3d27.730215519248645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19401915c2f7%3A0xa127d40b238e7ef1!2sChandramukhi%20Galli%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1735062976622!5m2!1sen!2snp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
